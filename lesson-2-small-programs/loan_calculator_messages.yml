@@ -1,0 +1,12 @@
+welcome: "Welcome to Loan Calculator! What is your name?"
+valid_name: "Make sure to enter a valid name."
+
+loan_amount: "What is the amount of the loan?"
+interest_rate: "What is the interest rate? \n
+(Example: 5 for 5% or 2.5 for 2.5%)"
+loan_duration: "What is the duration of the loan in years?"
+not_positive: "Hmm... that doesn't look like a positive number."
+invalid_number: "Hmm... that doesn't look like a valid number."
+
+repeat: "Do you want to perform another calculation? (Y to calculate again)"
+fin: "Thanks for using Loan Calculator. Goodbye!"
