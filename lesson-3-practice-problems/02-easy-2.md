@@ -136,7 +136,6 @@ Review the [String#slice!](http://ruby-doc.org/core/String.html#method-i-slice-2
 ```
 advice.slice!(0..38) # my solution
 advice.slice!(0, advice.index('house')) # Launch's solution...seems simpler and doesn't require a character counter lol
-
 ```
 
 As a bonus, what happens if you use the [String#slice](http://ruby-doc.org/core/String.html#method-i-slice) method instead?
