@@ -114,3 +114,55 @@ flintstones << "Dino"
 We could have used either `Array#concat` or `Array#push` to add Dino to the family.
 
 How can we add multiple items to our array? (Dino and Hoppy)
+
+```
+flintstones << "Dino" << "Hoppy"
+flintstones.push("Dino").push("Hoppy")
+flintstones.concat(["Dino", "Hoppy"])
+```
+
+## Question 8
+
+Shorten this sentence:
+
+```
+advice = "Few things in life are as important as house training your pet dinosaur."
+```
+
+...remove everything starting from "house".
+
+Review the [String#slice!](http://ruby-doc.org/core/String.html#method-i-slice-21) documentation, and use that method to make the return value `"Few things in life are as important as "`. But leave the `advice` variable as `"house training your pet dinosaur."`.
+
+```
+advice.slice!(0..38) # my solution
+advice.slice!(0, advice.index('house')) # Launch's solution...seems simpler and doesn't require a character counter lol
+
+```
+
+As a bonus, what happens if you use the [String#slice](http://ruby-doc.org/core/String.html#method-i-slice) method instead?
+
+If we use `String#slice` without the `!`, the string doesn't mutate and returns the entire sentence instead of only the second half.
+
+## Question 9
+
+Write a one-liner to count the number of lower-case 't' characters in the following string:
+
+```
+statement = "The Flintstones Rock!"
+```
+
+```
+statement.count("t")
+```
+
+## Question 10
+
+Back in the stone age (before CSS) we used spaces to align things on the screen. If we had a 40 character wide table of Flintstone family members, how could we easily center that title above the table with spaces?
+
+```
+title = "Flintstone Family Members"
+```
+
+```
+title.center(40)
+```
