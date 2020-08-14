@@ -111,3 +111,19 @@ end
 `map` returns `[nil, 'bear']` because only `bear` is a string greater than 3 characters. If none of the conditions of an `if` statement evaluates as `true`, the `if` statement itself returns `nil`, and that's what happens with `ant`.
 
 `map` considers the return value of the block and performs transformation on the item, then takes this value and places it in a new array. This is repeated for each element in the original collection.
+
+## Practice Problem 10
+
+What is the return value of the following code? Why?
+
+```ruby
+[1, 2, 3].map do |num|
+  if num > 1
+    puts num
+  else
+    num
+  end
+end
+```
+
+`[1, nil, nil]` is returned. In the `if` statement in the block, the first condition states if `num` is *greater* than `1`, `puts num`. `puts` always returns `nil`. if `num` is *not greater* than `1`, then return `num`. 
